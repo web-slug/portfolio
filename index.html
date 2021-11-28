@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/tailwind.css" rel="stylesheet">
+    <script src="https://unpkg.com/vue@next"></script>
+    
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type = "text/javascript" 
+    src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
+ </script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+ <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+ <!-- Initialize Swiper -->
+ 
+</head>
+<body class="bg-gray-300">
+
+    <!-- <nav class="sticky z-50 w-full p-4 space-x-6 text-2xl text-white bg-black bg-opacity-50 " id="nav">
+            <a href="#" class="">HOME</a>
+            <a href="#menu" class="">MENU</a>
+            <a href="#about" class="">ABOUT</a>
+            <a href="#myMap" class="">CONTACT</a>
+        </nav> -->
+    
+    <div class="w-full bg-black ml-96">
+        <div class="z-30 btn">
+            <span class="bar bar1"></span>
+            <span class="bar bar2"></span>
+            <span class="bar bar3"></span>
+        </div>
+        
+        <div class="z-20 hidden text-white menu">
+            <ul>
+                <li class="mb-2"><a href="#" class="border-b-2 border-transparent hover:border-white">Home</a></li>
+                <li class="mb-2"><a href="#" class="border-b-2 border-transparent hover:border-white">About Us</a></li>
+                <li class="mb-2"><a href="#" class="border-b-2 border-transparent hover:border-white">Services</a></li>
+                <li class="mb-2"><a href="#" class="border-b-2 border-transparent hover:border-white">Blogs</a></li>
+                <li class="mb-2"><a href="#" class="border-b-2 border-transparent hover:border-white">Contact</a></li>
+            </ul>
+        </div>
+    </div>  
+
+    <header class="w-full h-full min-h-screen text-white bg-fixed bg-cover" style="background-image: url('imgs/mac.jpg');">
+        <div class="top-36">
+           
+            <div class="text-center ">
+                <span class="" style="font-size:100px">create Future</span><br>
+                <span class="" style="font-size:60px"><b>build Future</b></span>
+            </div>
+            <div class="grid pb-5 place-items-center">
+                <div class="w-24 text-xl font-semibold text-center text-white border-2 border-white hover:bg-gray-300 hover:text-gray-700">
+                    <a href="#menu" class="">Let's meeet</a>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+
+    <section class="">
+        <div class="mt-10 font-bold text-center text-7xl"  >
+            <h1 class="bg-center bg-no-repeat" style="background-image: url(imgs/slaah.png);">About us  </h1>
+        </div>
+
+    <div class="m-24 shadow-lg rounded-2xl bg-gradient-to-r from-white to-gray-500">
+            <div class="inline-flex">
+                <div class="pt-5 pb-5 pl-5">
+                    <img src="imgs/designecologist-Pmh0UoG1vlE-unsplash.jpg" alt="" height="500" width="600" class="rounded-lg filter drop-shadow-2xl" />
+                </div>
+                <div class="items-center pt-10 pl-10 " style="font-size:30px">
+                    <h1 class="text-5xl font-extrabold " >Developing <br/>the<br/> Future </h1>
+                    We are Developers.<br/>
+                    Developing Future of ours and Other  
+                </div>
+            </div>
+    </div>
+    </section>
+
+    <section class="relative mb-24 bg-local bg-gray-800 h-96"  id="whatwekhnow">   
+        <div class="absolute min-w-full p-10" id="iconwrap">
+            <a href="" class="icondetail" data-id="1">
+                <img src="imgs/photo-shop-logo.png" class="object-contain object" data-value="-2" alt="" height="75" width="75">
+            </a>
+            <a href="" class="icondetail" data-id="2">
+                <img src="imgs/shopify-logo.png" class="object-contain object" data-value="6" alt="" height="75" width="75">
+            </a>
+            <a href="" class="icondetail" data-id="3">
+                <img src="imgs/laravel-logo.png" class="object-contain object" data-value="4" alt="" height="75" width="75">
+            </a>
+        <a href="" class="icondetail" data-id="4">
+                <img src="imgs/vue-js-logo.png" class="object-contain object" data-value="-6" alt="" height="75" width="75">
+        </a>
+        <a href="" class="icondetail" data-id="5">
+            <img src="imgs/vue-js-logo.png" class="object-contain object" data-value="-6" alt="" height="75" width="75">
+            </a>
+        
+        
+        </div>  
+    
+    </section>
+
+    <!-- <section class="">
+        <div class="mt-2 font-bold text-center text-7xl">
+            <h1 class="bg-center bg-no-repeat" style="background-image: url(imgs/slaah.png);">Technology we work with </h1>
+        </div>
+        <div class="pb-5 rounded-md m-28 min-w-max bg-gradient-to-b from-gray-800 to-white">
+            <div class="text-center timeline">
+                <ul class="inline-block ">
+                    <li class="relative w-2 pt-10 mt-0 mb-auto bg-white ">
+                        <div class="invisible rotate-45 opacity-0 cardli card">
+                            <div class="">
+                                <img src="imgs/wp.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="relative w-2 pt-10 mt-0 mb-auto bg-white">
+                    <div class="invisible float-right rotate-45 opacity-0 cardli card">
+                        <div class="">
+                            <img src="imgs/laravel.png" alt="">
+                        </div>
+                        
+                    </div>
+                    </li >
+                    <li class="relative w-2 pt-10 mt-0 mb-auto bg-white">
+                    <div class="invisible rotate-45 opacity-0 cardli card">
+                        
+                        <div class="">
+                            <img src="imgs/ps.png" alt="">
+                        </div>
+                    </div>
+                    </li>
+                    <li class="relative w-2 pt-10 mt-0 mb-auto bg-white">
+                        <div class="invisible float-right rotate-45 opacity-0 cardli card">
+                            <div class="">
+                                <img src="imgs/Shopify.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="relative w-2 pt-10 mt-0 mb-auto bg-white">
+                        <div class="invisible rotate-45 opacity-0 cardli card">
+                        
+                        <div class="">
+                            <img src="imgs/vue.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+    </section> -->
+    <!--responsive desgin -->
+    <div class="mt-2 font-bold text-center text-7xl" id="reponsive">
+        <h1 class="bg-center bg-no-repeat" style="background-image: url(imgs/slaah.png);" >Responsive Design </h1>
+    </div>
+    <section class="relative " id="target">
+        <div  class="">
+            <div class="absolute z-50 inset-y-20 " id="comp" >
+                <img src="imgs/mac.jpg" alt="" class="w-screen max-h-full "  >
+            </div>
+            <div class="top-0 z-0" id="" >
+                <img src="imgs/recomp-img.png " alt="" class="" style="min-height: 1000px;" id="backcomp" >
+            </div>
+        </div>
+    </section>
+
+    <section class="">   
+        <div class="mt-2 mb-8 font-bold text-center text-7xl" id="reponsive">
+            <h1 class="bg-center bg-no-repeat" style="background-image: url(imgs/slaah.png);" >Testimonials  </h1>
+        </div>
+        <div class="relative w-full overflow-hidden bg-gray-800 h-96 mySwiper">
+            <div class="text-white swiper-wrapper">
+              <div class=" swiper-slide">
+                <div class="p-8 text-3xl text-center">
+                    
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Pellentesque in ipsum id orci porta dapibus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+                    
+                </div>
+                <div class="p-8 text-center">
+                    <h1>
+                        Slide 1
+                    </h1>
+                </div>
+              </div>
+              <div class=" swiper-slide">
+                <div class="p-8 text-3xl text-center">
+                    
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Pellentesque in ipsum id orci porta dapibus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+                    
+                </div>
+                <div class="p-8 text-center">
+                    <h1>
+                        Slide 2
+                    </h1>
+                </div>
+              </div>
+              <div class=" swiper-slide">
+                <div class="p-8 text-3xl text-center">
+                    
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Pellentesque in ipsum id orci porta dapibus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+                    
+                </div>
+                <div class="p-8 text-center">
+                    <h1>
+                        Slide 3
+                    </h1>
+                </div>
+              </div>
+              <div class=" swiper-slide">
+                <div class="p-8 text-3xl text-center">
+                    
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Pellentesque in ipsum id orci porta dapibus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+                    
+                </div>
+                <div class="p-8 text-center">
+                    <h1>
+                        Slide 4
+                    </h1>
+                </div>
+              </div>
+              <div class=" swiper-slide">
+                <div class="p-8 text-3xl text-center">
+                    
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Pellentesque in ipsum id orci porta dapibus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+                    
+                </div>
+                <div class="p-8 text-center">
+                    <h1>
+                        Slide 5
+                    </h1>
+                </div>
+              </div>
+              <div class=" swiper-slide">
+                <div class="p-8 text-3xl text-center">
+                    
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Pellentesque in ipsum id orci porta dapibus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+                    
+                </div>
+                <div class="p-8 text-center">
+                    <h1>
+                        Slide 6
+                    </h1>
+                </div>
+              </div>
+              <div class=" swiper-slide">
+                <div class="p-8 text-3xl text-center">
+                    
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Pellentesque in ipsum id orci porta dapibus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+                    
+                </div>
+                <div class="p-8 text-center">
+                    <h1>
+                        Slide 7
+                    </h1>
+                </div>
+              </div>
+              <div class=" swiper-slide">
+                <div class="p-8 text-3xl text-center">
+                    
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Pellentesque in ipsum id orci porta dapibus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+                    
+                </div>
+                <div class="p-8 text-center">
+                    <h1>
+                        Slide 9
+                    </h1>
+                </div>
+              </div>
+              <div class=" swiper-slide">
+                <div class="p-8 text-3xl text-center">
+                    
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Pellentesque in ipsum id orci porta dapibus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+                    
+                </div>
+                <div class="p-8 text-center">
+                    <h1>
+                        Slide 10
+                    </h1>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+    </section>
+    <!-- Footer -->
+    <footer class="pb-10 av primarycolor">
+        <div class="m-8">
+            <div class="flex items-center justify-between">
+                <div class="pl-24 mt-10" >
+                    <div class="flex justify-between item-center">
+                        
+                        <ul class="mt-10 ml-5 text-xl font-bold text-gray-700 list-none">
+                            <li><a href="" class="hover:text-red-600">Home</a></li>
+                            <li><a href="" class="hover:text-red-600">About</a></li>
+                            <li><a href="" class="hover:text-red-600">Contact</a></li>
+                            <li><a href="" class="hover:text-red-600">Services</a></li>
+                        </ul>
+                    </div>  
+                </div>
+                <div class="mt-36 ">
+                    <div class="block float-left transition duration-150 ease-in rounded mr-50 ">
+                        <ul class="flex items-center pl-24 hover:border-red-900"> 
+                            <li class="hover:text-red-900">
+                                <a href="#" class="fa-stack fa-lg" target="_blank">			
+                                    <i class="fa fa-square fa-stack-2x"></i>			
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>			
+                                </a>			
+                            </li>
+                            <li class="hover:text-red-900">
+                                <a href="#" class="fa-stack fa-lg" target="_blank">			
+                                    <i class="fa fa-square fa-stack-2x"></i>			
+                                    <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>			
+                                </a>			
+                            </li>
+                            <li class="hover:text-red-900">
+                                <a href="#" class="fa-stack fa-lg" target="_blank">          
+                                    <i class="fa fa-square fa-stack-2x"></i>            
+                                    <i class="fa fa-youtube-play fa-stack-1x fa-inverse"></i>            
+                                </a>            
+                            </li>
+                        </ul>
+                        <div class="block lg:text-gray-700 ">
+                            COPYRIGHT © 2021 MIRROR IMAGE SALON ETC.<br>
+                            ALL RIGHTS RESERVED.DEVELOPED BY CWS
+                        </div>
+                    </div>
+                </div>
+                <div class="pr-20 mt-10">
+                    <div class="text-white">
+                        <h1 class=""><strong>   Contact Information </strong> </h1>
+                        <hr class="w-full mt-2 border-t-2 border-solid border-primary">
+                        <div class="mt-5">
+                            <div class="text-white">
+                                <h2 class=""><strong>Mail us</strong></h2>
+                                <a href="mail-to:support@crazywebslug.com" class="hover:text-red-600">support@crazywebslug.com</a>
+                            </div>
+                            <div class="mt-5 ">
+                                <div class="text-white">
+                                    <h2 class=""><strong>Contact us</strong></h2>
+                                    <a href="tel:1234567890" class="hover:text-red-600">1234567890</a>
+                                </div>
+                            </div>
+                    
+                    
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>  
+    </footer>
+    
+    <div class="fixed top-0 left-0 z-40 hidden w-screen h-screen bg-black opacity-75 " id="overlay"> </div>  
+    <div class="fixed top-0 left-0 z-50 overflow-x-hidden bg-white min-w-min m-28">
+
+        <div id="tooltip1" class="hidden text-xl">
+            <div class="bg-white rounded">
+                <div class="z-50 float-right m-2"> 
+                <a href="#" class="boxclose" data-rel="1">
+                X
+                    <i class="fab fa-close" ></i>
+                </a>
+                </div>
+            </div>
+            <div class="p-8">
+                <h1 class="font-semibold">1</h1>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec rutrum congue leo eget malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla quis lorem ut libero malesuada feugiat. Cras ultricies ligula sed magna dictum porta. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt.
+
+            </div>
+        </div>
+
+        <div id="tooltip2" class="hidden text-xl">
+            <div class="bg-white rounded">
+                <div class="z-50 float-right m-2"> 
+                <a href="#" class="boxclose" data-rel="2">
+                X
+                    <i class="fab fa-close" ></i>
+                </a>
+                </div>
+            </div>
+            <div class="p-8">
+                <h1 class="font-semibold">2</h1>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec rutrum congue leo eget malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla quis lorem ut libero malesuada feugiat. Cras ultricies ligula sed magna dictum porta. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt.
+            </div>
+        </div>
+
+        <div id="tooltip3" class="hidden text-xl">
+            <div class="bg-white rounded">
+                <div class="z-50 float-right m-2"> 
+                <a href="#" class="boxclose" data-rel="3">
+                X
+                    <i class="fab fa-close" ></i>
+                </a>
+                </div>
+            </div>
+            <div class="p-8">
+                <h1 class="font-semibold">3</h1>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec rutrum congue leo eget malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla quis lorem ut libero malesuada feugiat. Cras ultricies ligula sed magna dictum porta. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt.
+            </div>
+        </div>
+
+        <div id="tooltip4" class="hidden text-xl">
+            <div class="bg-white rounded">
+                <div class="z-50 float-right m-2"> 
+                <a href="#" class="boxclose" data-rel="4">
+                X
+                    <i class="fab fa-close" ></i>
+                </a>
+                </div>
+            </div>
+            <div class="p-8">
+                <h1 class="font-semibold">4</h1>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec rutrum congue leo eget malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla quis lorem ut libero malesuada feugiat. Cras ultricies ligula sed magna dictum porta. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt.
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>
+        $(function(){
+            var swiper = new Swiper(".mySwiper", {
+            //   effect: "cards",
+            //   grabCursor: true,
+                autoplay: {
+                    delay: 2000,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                },
+            });
+        });
+        
+      </script>
+    <script>
+       // import Vue from Vue;
+        // Vue.createApp({
+        //     data(){
+        //         return{
+        //             header:"lets start vue"
+        //         }
+        //     }
+        // }).mount('#btn')
+
+        $(".btn ,.menu").hover(function(){
+            $(".btn").toggleClass("close-btn");
+            //$(".menu").toggleClass("close-btn");
+           $(".menu").toggleClass("hidden")
+            $(".menu").toggleClass("open-menu");
+        });
+
+        $("#iconwrap .icondetail").each(function (i, elt) {
+            $(elt).css({
+                bottom: Math.floor( Math.random() * 150) ,
+                left: Math.floor( Math.random() * 150 ) 
+            });
+        });
+        
+        $('.icondetail').click(function(e){
+            e.preventDefault();
+            $tooltiid = $(this).data('id');
+            $('#overlay').fadeIn();
+            $('#tooltip'+$tooltiid).show();
+        })
+        
+        $('.boxclose').click(function(e){
+            e.preventDefault();
+            $tooltiid = $(this).data('rel');
+            $('#overlay').fadeOut();
+            $('#tooltip'+$tooltiid).hide();
+        })
+        
+     //alert($('#reponsive').offset().top)
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() { 
+            if (document.body.scrollTop > 1900.60009765625 || document.documentElement.scrollTop > 1900.60009765625) {
+                $('#comp').css({'transform': "scale(0.35,0.34) translate(-630px,0px)",
+                                'transition-timing-function': 'ease',
+                                'transition-duration': '0.5',
+                                'top':'-270px'});
+                                
+                $('#backcomp').css({'transform': "translate(-220px,-150px) scale(0.6,0.6)",
+                                'transition-timing-function': 'ease',
+                                'transition-duration': '0.5',
+                                'top':'-50px'});
+               
+            } 
+            else 
+            {
+                $('#comp').css({'transform': "scale(1,1)",
+                                'transition-timing-function': 'ease',
+                                'transition-duration': '0.5s',
+                                'top':'0'})
+            }
+        }
+                
+        // $(window).scroll(function () {
+           
+        //     if($(window).scrollTop() > 100) {
+        //         $("#nav").addClass('fixed');
+        //         $("#nav").removeClass('sticky');
+               
+        //     } else {
+        //         $("#nav").addClass('sticky');
+        //         $("#nav").removeClass('fixed');
+        //     }
+        // });
+        
+        $(function() {
+            $('#whatwekhnow').mousemove(function() {
+                 document.addEventListener("mousemove", parallax);   
+            }); 
+        })
+      
+
+        function parallax(e){
+            document.querySelectorAll(".object").forEach(function(move){
+                var moving_value = move.getAttribute("data-value");
+                var x = (e.clientX * moving_value) / 250;
+                var y = (e.clientY * moving_value) / 250;
+
+                move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+            });
+        }
+
+
+        /********************Card list********************/
+      
+        // var items = document.querySelectorAll(".timeline li .card");
+
+        // function isElementInViewport(el) {
+        //     var rect = el.getBoundingClientRect();
+        //     return (
+        //         rect.top >= 0 &&
+        //         rect.left >= 0 &&
+        //         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        //         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        //     );
+        // }
+
+        // function callbackFunc() {
+        // for (var i = 0; i < items.length; i++) {
+        //     if (isElementInViewport(items[i])) {
+        //     if(!items[i].classList.contains("visible")){
+        //         items[i].classList.add("visible");
+        //         items[i].classList.remove("opacity-0");
+        //         items[i].classList.add("opacity-1");
+        //         items[i].classList.remove("invisible");
+        //         items[i].classList.remove("rotate-45");
+                
+                
+        //     }
+        //     } else if(items[i].classList.contains("visible")) {
+        //         items[i].classList.remove("visible");
+        //         items[i].classList.add("opacity-0");
+        //         items[i].classList.remove("opacity-1");
+        //         items[i].classList.add("invisible");
+        //         items[i].classList.add("rotate-45");
+        //     }
+        // }
+        // }
+        
+        // window.addEventListener("load", callbackFunc);
+        // window.addEventListener("scroll", callbackFunc);
+        
+    </script>
+</body>
+</html>
+
