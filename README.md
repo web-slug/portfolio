@@ -1,10 +1,9 @@
 # portfolio
 First clone this repository, install the dependencies, and setup your .env file.
 
-git clone git@github.com:web-slug/portfolio.git
-node install(required)
+git clone https://github.com/web-slug/portfolio.git
 npm install
-
-nom run dev
+node install(required)
+npm run dev
 
 
