@@ -6,6 +6,14 @@ module.exports = {
       colors:{
         primarycolor:'#686a6d'
       },
+      maxHeight: {
+        '800': '800px',
+       // serif: ['Merriweather', 'serif'],
+      },
+      spacing: {
+        '1.5': '1.5px',
+       // serif: ['Merriweather', 'serif'],
+      },
     },
     
     containerWrap: {
@@ -15,6 +23,7 @@ module.exports = {
       sans: ['Amatic SC', 'sans-serif'],
      // serif: ['Merriweather', 'serif'],
     },
+    
   },
   variants: {
     extend: {},
