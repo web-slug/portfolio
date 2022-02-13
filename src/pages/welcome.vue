@@ -6,7 +6,7 @@
           d="M1920,0c0,0-109.246,46.107-316.333,67.334C1343.5,94,1137.095,77.238,999.167,67.5C854,57.25,637.662,24.697,541.709,18.834C375.334,8.666,147,11,0,37.875V0H1920L1920,0z">
         </path>
       </svg>
-      <div class="hero__container container" >
+      <div class="container hero__container" >
 		<div class="slides slides--contained effect-2">
 			<div class="slide slide--current">
 				<div class="slide__img glitch"  :style="{backgroundImage: `url('${image}')`}"></div>
@@ -24,12 +24,11 @@
 					</div>
 				</div>
 			</div>
+			<nav class="slide-nav">
+				<button class="slide-nav__button navleft"><img :src="`${nextarrow}`"></button>
+				<button class="slide-nav__button navright"><img :src="`${nextarrow}`"></button>
+			</nav>
 		</div>
-		
-		<nav class="slide-nav">
-			<button class="slide-nav__button"><span>Previous</span></button>
-			<button class="slide-nav__button"><span>Next</span></button>
-		</nav>
       </div>
       <svg class="wave" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
         x="0px" y="0px" viewBox="0 0 1920 81.717" enable-background="new 0 0 1920 81.717" xml:space="preserve">
@@ -47,6 +46,7 @@ export default{
 		return{
 			image:require('../assets/img/hero.jpg'),
 			image2:require('../assets/img/bg.jpg'),
+			nextarrow:require('../assets/img/portfolio/next.png'),
 		}
 	},
     mounted(){
@@ -132,8 +132,17 @@ export default{
 </script>
 
 <style scoped>
-
-
+.slide{
+display: flex;
+width: 100%;
+justify-content: center;
+}
+.slide__text{
+	text-align: center;
+}
+.slide__img,.slide__text{
+flex: 0 0 50%;
+}
 
 
 .hero {
@@ -326,8 +335,12 @@ export default{
 	width: 600px;
 	max-width: 100%;
 }
-
-.slide__text {
+.slides--contained .slide__img{
+width: 100%;
+max-width: 42%;
+height: 65vh;
+}
+/* .slide__text {
 	position: absolute;
 	top: 50%;
 	left: 20vw;
@@ -335,7 +348,7 @@ export default{
 
 .slides--contained .slide__text {
 	left: -10vw;
-}
+} */
 
 .slide:first-child .slide__text {
 	color: #ffae1a;
@@ -391,24 +404,42 @@ export default{
 }
 
 .slide-nav {
-	display: flex;
-	flex-direction: column;
+	/* display: flex;
+	flex-direction: column; */
 	position: absolute;
 	top: 0;
-	left: 20vw;
-	width: 60vw;
+	left: 0;
+	width: 80vw;
 	height: 100vh;
-	justify-content: center;
-	align-items: center;
+	/* justify-content: center;
+	align-items: center; */
 }
-
+.slide-nav__button.navleft{
+left: -24px;
+position: absolute;
+color: white;
+top: 40%;
+transform: rotate(180deg);
+}
+.slide-nav__button.navright{
+	right: 0;
+    position: absolute;
+    color: white;
+    top: 40%;
+}
+.slide-nav__button img{
+	width: 20px;
+    height: 20px;
+	cursor:pointer;
+}
 .slides--contained + .slide-nav {
-	flex-direction: row;
-	justify-content: flex-start;
+	/* flex-direction: row;
+	justify-content: flex-start; */
 	height: auto;
 	margin: 0 0 0 0.25rem;
-	top: calc(50% - 0.5rem);
-	left: calc(100vw - 600px - 11rem - 4rem - 10vw);
+	top: 50%;
+	left: 0;
+	width:80vw;
 }
 
 .slide-nav__button {
@@ -457,7 +488,48 @@ export default{
 .slide-nav__text--current {
 	background-image: linear-gradient(transparent 58%, var(--color-link) 58%, var(--color-link) 64%,transparent 64%);
 }
-
+@media screen and (max-width: 768px) {
+	.slide{
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		flex-direction: row;
+		width: 100vw !important;
+	}
+.slide__img, .slide__text{
+flex: 0 0 100%;
+}
+.slides--contained .slide__img{
+    max-width: 100%;
+}
+/* .side_nav{
+left: 19px;
+} */
+.js .slide--current{
+left:15% !important;
+}
+.slide-nav{    
+left: 25%;
+transform: translateX(-50px);
+}
+.hero__container{
+	padding:0 !important;
+}
+.slide-nav__button.navleft{
+left: -10px;
+}
+}
+@media screen and (max-width: 425px){
+.slide-nav{
+left: 33%;
+}
+}
+@media screen and (max-width: 375px){
+.slide-nav{
+left: 35%;
+transform: translateX(-50px);
+}
+}
 @media screen and (max-width: 65em) {
 	.slides--contained {
 		margin: 0 !important;
